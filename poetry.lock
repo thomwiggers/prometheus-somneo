@@ -23,6 +23,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
+name = "prometheus-client"
+version = "0.8.0"
+description = "Python client for the Prometheus monitoring system."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+twisted = ["twisted"]
+
+[[package]]
 name = "pysomneo"
 version = "0.1.12"
 description = "A library to communicate with the API of Philips Somneo."
@@ -68,7 +79,7 @@ socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.0"
 python-versions = "^3.8"
-content-hash = "4790f292fb7995868ee8dbb2529ba6c63145155588a6a4e66a7abcc4d4928aec"
+content-hash = "aeed96f2220d4eef0f2067d14dc83871960047a545a5006c98801480483a014a"
 
 [metadata.files]
 certifi = [
@@ -82,6 +93,10 @@ chardet = [
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
     {file = "idna-2.10.tar.gz", hash = "sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"},
+]
+prometheus-client = [
+    {file = "prometheus_client-0.8.0-py2.py3-none-any.whl", hash = "sha256:983c7ac4b47478720db338f1491ef67a100b474e3bc7dafcbaefb7d0b8f9b01c"},
+    {file = "prometheus_client-0.8.0.tar.gz", hash = "sha256:c6e6b706833a6bd1fd51711299edee907857be10ece535126a158f911ee80915"},
 ]
 pysomneo = [
     {file = "pysomneo-0.1.12-py3-none-any.whl", hash = "sha256:bf22e8a386237b9f1d64b1c977398250e04fc803fa03dc9d2342347543dee3d4"},

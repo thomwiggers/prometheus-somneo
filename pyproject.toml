@@ -3,6 +3,9 @@ name = "somneo"
 version = "0.1.0"
 description = ""
 authors = ["Thom Wiggers <thom@thomwiggers.nl>"]
+packages = [
+    { include = "measure" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"

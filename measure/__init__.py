@@ -13,6 +13,7 @@ def run():
     if len(sys.argv) != 2:
         print(f"Usage: {sys.argv[0]} <somneo host>")
         sys.exit(1)
+    host = sys.argv[1]
 
     start_http_server(int(os.environ.get("LISTEN_PORT", 9101)))
 

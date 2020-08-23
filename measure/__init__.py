@@ -26,7 +26,12 @@ def run():
 
 
     while True:
-        somneo.update()
+        try:
+            somneo.update()
+        except:
+            print("pysomneo errored")
+            time.sleep(3)
+            continue
         temperature.set(somneo.temperature())
         humidity.set(somneo.humidity())
         luminance.set(somneo.luminance())
